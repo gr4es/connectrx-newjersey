@@ -1,0 +1,284 @@
+{
+  "meta": {
+    "title": "ConnectRX: Rótulos de remédios no seu idioma",
+    "description": "Apoie o SafeRX. As farmácias de NJ teriam que dar rótulos, avisos e orientação no seu idioma."
+  },
+  "nav": {
+    "skip": "Ir para o conteúdo",
+    "brandTag": "Rótulos de remédios no seu idioma",
+    "links": {
+      "pillars": "O projeto",
+      "laws": "Outros estados",
+      "action": "Participe",
+      "journey": "Campanha",
+      "preview": "Ver rótulo",
+      "faq": "Perguntas"
+    },
+    "language": "Idioma",
+    "yourLanguage": "Seu idioma",
+    "chooseLanguage": "Escolha um idioma",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "cta": "Assine a petição"
+  },
+  "hero": {
+    "eyebrow": "Projeto de lei em Nova Jersey",
+    "titleLead": "Rótulos de remédios",
+    "titleHighlight": "que você entende.",
+    "subtitle": "O SafeRX obrigaria as farmácias de NJ a dar rótulos, avisos e orientação no seu idioma. Menos erros. Mais segurança.",
+    "ctaPetition": "Assine a petição",
+    "ctaLegislator": "Escreva aos seus legisladores",
+    "badges": [
+      {
+        "strong": "7",
+        "text": "idiomas desde o início"
+      },
+      {
+        "strong": "2 estados",
+        "text": "já têm leis parecidas"
+      },
+      {
+        "strong": "1 minuto",
+        "text": "para escrever aos legisladores"
+      }
+    ],
+    "cardTitle": "Seu rótulo, no seu idioma",
+    "readIn": "Ler em português"
+  },
+  "action": {
+    "eyebrow": "Participe",
+    "title": "Escreva aos seus legisladores em um minuto",
+    "subtitle": "Assine a petição, encontre seu distrito e envie uma carta pronta.",
+    "steps": [
+      "Seus dados",
+      "Seu distrito",
+      "Sua carta"
+    ],
+    "stepLabel": "Etapa {current} de {total}",
+    "fields": {
+      "name": "Nome completo",
+      "email": "E-mail",
+      "zip": "ZIP code de NJ",
+      "zipHint": "Começa com 07 ou 08",
+      "updates": "Quero receber novidades (opcional)"
+    },
+    "errors": {
+      "name": "Digite seu nome completo.",
+      "email": "Digite um e-mail válido.",
+      "zip": "Digite um ZIP code de Nova Jersey. Ele começa com 07 ou 08.",
+      "district": "Escolha seu distrito.",
+      "network": "Algo deu errado. Tente de novo."
+    },
+    "findDistrict": "Assinar e achar meu distrito",
+    "finding": "Buscando seu distrito…",
+    "back": "Voltar",
+    "matched": "O ZIP {zip} fica no Distrito {district}.",
+    "multiMatch": "O ZIP {zip} cobre mais de um distrito. Escolha o seu.",
+    "noMatch": "Obrigado por assinar! Escolha seu distrito para o ZIP {zip}.",
+    "districtLabel": "Distrito legislativo",
+    "districtPlaceholder": "Escolha seu distrito",
+    "districtOption": "Distrito {district}",
+    "lookupLink": "Não sabe? Consulte o site do Legislativo de NJ",
+    "recipientsTitle": "Sua carta vai para",
+    "senator": "Senador estadual, Distrito {district}",
+    "assembly": "2 deputados da Assembleia, Distrito {district}",
+    "continue": "Escrever minha carta",
+    "letterTitle": "Confira sua carta",
+    "letterLanguage": "Idioma da carta",
+    "letterInEnglish": "Inglês (melhor para legisladores)",
+    "letterInMine": "Meu idioma",
+    "subjectLabel": "Assunto",
+    "bodyLabel": "Mensagem (você pode editar)",
+    "send": "Enviar carta",
+    "sending": "Abrindo o e-mail…",
+    "copy": "Copiar carta",
+    "copied": "Copiada!",
+    "sendNote": "Seu e-mail vai abrir com a carta pronta. Só usamos seus dados nesta campanha.",
+    "successTitle": "Obrigado, {name}!",
+    "successBody": "Sua carta está aberta no seu e-mail. Clique em enviar e compartilhe o SafeRX com amigos.",
+    "startOver": "Escrever outra carta",
+    "letter": {
+      "subject": "Por favor, apoie o SafeRX",
+      "greeting": "Prezados Senador e deputados da Assembleia do Distrito {district},",
+      "body": "Moro no distrito que vocês representam. Peço que patrocinem e apoiem o SafeRX.\n\nO SafeRX obrigaria as farmácias de Nova Jersey a dar rótulos, avisos e orientação do farmacêutico no idioma de cada paciente.\n\nMuitos moradores de Nova Jersey falam pouco inglês. Quem não consegue ler o rótulo do remédio pode tomar a dose errada. Nova York e Califórnia já protegem esses pacientes. Nova Jersey deve fazer o mesmo.\n\nPeço que me informem a posição de vocês sobre o SafeRX.",
+      "closing": "Obrigado,",
+      "signature": "{name}\n{zip}, Nova Jersey\n{email}"
+    }
+  },
+  "pillars": {
+    "eyebrow": "O projeto",
+    "title": "O que o SafeRX faz",
+    "subtitle": "Baseado em leis que já funcionam em Nova York e na Califórnia.",
+    "items": [
+      {
+        "title": "Rótulos traduzidos",
+        "body": "Instruções e avisos no seu idioma, junto com o inglês.",
+        "points": [
+          "Instruções traduzidas",
+          "Avisos traduzidos",
+          "Inglês mantido para cuidadores"
+        ]
+      },
+      {
+        "title": "Traduções confiáveis",
+        "body": "Um só conjunto de traduções aprovado pelo estado para todas as farmácias.",
+        "points": [
+          "Revisadas por tradutores médicos",
+          "Grátis para as farmácias",
+          "Atualizadas regularmente"
+        ]
+      },
+      {
+        "title": "Fiscalização do estado",
+        "body": "O Conselho de Farmácia de NJ faz cumprir as regras.",
+        "points": [
+          "Regras claras",
+          "Um canal para relatar problemas",
+          "Relatórios públicos"
+        ]
+      },
+      {
+        "title": "Seu idioma salvo",
+        "body": "A farmácia salva seu idioma uma vez e o usa sempre.",
+        "points": [
+          "Rótulos, mensagens e orientação no mesmo idioma",
+          "Funciona com qualquer alfabeto",
+          "Intérpretes na orientação"
+        ]
+      }
+    ]
+  },
+  "laws": {
+    "eyebrow": "Já funciona",
+    "title": "Leis que já funcionam",
+    "subtitle": "Nova York e Califórnia já protegem os pacientes. O SafeRX se baseia nas duas.",
+    "rows": {
+      "passed": "Aprovada",
+      "who": "Quem é coberto",
+      "what": "O que o paciente recebe",
+      "languages": "Idiomas"
+    },
+    "ny": {
+      "name": "Nova York",
+      "law": "Lei SafeRx",
+      "passed": "2012 (em vigor desde 2013)",
+      "who": "Redes com 8 ou mais farmácias no estado",
+      "what": "Rótulos, avisos e informações escritas traduzidos de graça, mais um intérprete na orientação",
+      "languages": "Até 7 por região, cada um falado por pelo menos 1% dos moradores",
+      "extra": "As farmácias devem afixar um aviso sobre esse direito."
+    },
+    "ca": {
+      "name": "Califórnia",
+      "law": "AB 1073",
+      "passed": "2015 (em vigor desde 2016)",
+      "who": "Todas as farmácias",
+      "what": "Instruções de uso traduzidas, se pedidas, no rótulo ou em uma folha separada",
+      "languages": "Traduções do estado em chinês, coreano, espanhol, farsi, russo e vietnamita",
+      "extra": "O inglês fica no rótulo. As farmácias podem incluir outros idiomas."
+    },
+    "source": "Ler a lei",
+    "takeaway": "O SafeRX traz as duas ideias para Nova Jersey: rótulos e avisos traduzidos, e orientação no seu idioma."
+  },
+  "journey": {
+    "eyebrow": "A campanha",
+    "title": "Como vamos vencer",
+    "subtitle": "Sua voz vai desta página até o Legislativo em Trenton.",
+    "steps": [
+      {
+        "title": "Assinar",
+        "body": "Assine a petição e informe seu distrito."
+      },
+      {
+        "title": "Mobilizar",
+        "body": "Traga amigos, colegas e grupos da comunidade."
+      },
+      {
+        "title": "Pressionar",
+        "body": "Cartas, ligações e visitas conquistam apoio dos dois partidos."
+      },
+      {
+        "title": "Vencer",
+        "body": "Audiências, votações e a assinatura do governador."
+      }
+    ],
+    "coalitionTitle": "Uma coalizão que cresce"
+  },
+  "coalition": {
+    "label": "Tipos de parceiros",
+    "pause": "Pausar",
+    "play": "Continuar",
+    "items": [
+      "Grupos de saúde pública",
+      "Grupos estudantis",
+      "Grupos de ajuda jurídica",
+      "Grupos de direitos dos imigrantes",
+      "Farmacêuticos",
+      "Comunidades de fé",
+      "Defensores dos idosos",
+      "Centros de saúde comunitários"
+    ]
+  },
+  "preview": {
+    "tablistLabel": "Idioma do rótulo",
+    "bilingual": "Mostrar inglês também",
+    "stickersHeading": "Avisos",
+    "disclaimer": "Só um exemplo. Não é orientação médica. Rótulos reais precisam de tradução médica profissional."
+  },
+  "label": {
+    "patientLabel": "Paciente",
+    "rxLabel": "Receita",
+    "drug": "Amoxicilina 500 mg cápsulas",
+    "qtyLabel": "Qtd.",
+    "refillsLabel": "Renovações",
+    "directionsLabel": "Como usar",
+    "directions": "Tome 1 cápsula pela boca 3 vezes ao dia por 10 dias.",
+    "warnings": [
+      "Tome todo o remédio, mesmo que se sinta melhor.",
+      "Tome com comida ou água.",
+      "Ligue para o médico na hora se tiver manchas na pele ou falta de ar."
+    ],
+    "counseling": "Orientação grátis no seu idioma. Pergunte ao farmacêutico."
+  },
+  "faq": {
+    "eyebrow": "Perguntas",
+    "title": "Perguntas comuns",
+    "items": [
+      {
+        "q": "O que é o SafeRX?",
+        "a": "É um projeto de lei em Nova Jersey. As farmácias teriam que dar rótulos, avisos e orientação no seu idioma. Ainda não é lei."
+      },
+      {
+        "q": "A quem o SafeRX ajuda?",
+        "a": "A quem tem dificuldade com o inglês, além de suas famílias e cuidadores. Muitos são idosos e imigrantes."
+      },
+      {
+        "q": "O que fazem Nova York e Califórnia?",
+        "a": "Nova York exige que grandes redes de farmácias deem rótulos traduzidos e intérpretes de graça. A Califórnia exige instruções traduzidas quando o paciente pede, e o estado oferece traduções aprovadas. O SafeRX se baseia nas duas."
+      },
+      {
+        "q": "Por que estes sete idiomas?",
+        "a": "São muito falados em Nova Jersey. O Conselho de Farmácia pode incluir outros depois."
+      },
+      {
+        "q": "Como garantir que as traduções estejam corretas?",
+        "a": "Tradutores médicos escrevem e revisam um único conjunto de traduções. As farmácias não precisam traduzir por conta própria."
+      },
+      {
+        "q": "Quanto custa para as farmácias?",
+        "a": "Pouco. Elas usam traduções grátis do estado e o software que já têm. A lei definiria os prazos."
+      },
+      {
+        "q": "De que outras formas posso ajudar?",
+        "a": "Assine a petição, envie uma carta, compartilhe esta página e convide seu grupo a participar."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Uma campanha popular por rótulos de remédios em todos os idiomas.",
+    "contact": "Fale conosco",
+    "follow": "Siga-nos",
+    "translationNote": "As traduções devem ser revisadas por tradutores qualificados.",
+    "legal": "O ConnectRX é uma campanha popular independente. O SafeRX é um projeto de lei, não uma lei. Este site não dá orientação médica ou jurídica.",
+    "rights": "© {year} ConnectRX"
+  }
+}

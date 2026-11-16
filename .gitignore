@@ -1,0 +1,9 @@
+node_modules
+.next
+out
+.env*.local
+*.tsbuildinfo
+.DS_Store
+
+# Local design reference (not part of the site)
+Screenshot*.png

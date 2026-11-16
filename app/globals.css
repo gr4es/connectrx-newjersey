@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Type system modeled on the reference screenshot:
+ * Inter, tight semibold display headlines, muted relaxed body copy,
+ * sentence case everywhere (no all-caps labels), semibold pill buttons.
+ */
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5.5rem; /* sticky header offset for anchor links */
+  }
+
+  body {
+    font-size: 1.0625rem; /* 17px */
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Devanagari has tall glyphs and stacked marks, so it needs more room */
+  html[lang="hi"] body {
+    line-height: 1.75;
+  }
+  html[lang="hi"] h1,
+  html[lang="hi"] h2,
+  html[lang="hi"] h3 {
+    line-height: 1.35;
+    letter-spacing: 0;
+  }
+
+  /* CJK: no negative tracking, a bit more line height, no mid-word breaks */
+  html[lang="zh-Hans"] h1, html[lang="zh-Hans"] h2, html[lang="zh-Hans"] h3,
+  html[lang="ko"] h1, html[lang="ko"] h2, html[lang="ko"] h3 {
+    letter-spacing: 0;
+    line-height: 1.2;
+  }
+  /*
+   * Same script rules for individual elements tagged with lang, e.g. the
+   * rotating hero title and language button, which mix scripts on one page.
+   */
+  :is(h1, h2, h3) [lang="hi"] {
+    line-height: 1.35;
+    letter-spacing: 0;
+  }
+  :is(h1, h2, h3) :is([lang="zh-Hans"], [lang="ko"]) {
+    line-height: 1.2;
+    letter-spacing: 0;
+  }
+  [lang="zh-Hans"], [lang="ko"] {
+    word-break: keep-all;
+  }
+  /* And the reverse: Latin/Cyrillic titles keep their tight display spacing on a CJK/Hindi page */
+  .h1 :is([lang="en"], [lang="es"], [lang="ru"], [lang="pt-BR"]) {
+    line-height: 1.04;
+    letter-spacing: -0.032em;
+    word-break: normal;
+  }
+
+  html[lang="zh-Hans"] body,
+  html[lang="ko"] body {
+    word-break: keep-all;
+    line-break: strict;
+  }
+
+  /* Long Russian / Portuguese words should wrap instead of overflowing */
+  h1, h2, h3, button, a, label {
+    overflow-wrap: anywhere;
+    hyphens: auto;
+  }
+
+  :focus-visible {
+    outline: 3px solid #D95338;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-16 sm:py-24;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-sm font-medium text-teal;
+  }
+
+  .h1 {
+    @apply text-5xl font-semibold leading-[1.04] tracking-[-0.032em] text-ink sm:text-6xl lg:text-7xl;
+  }
+
+  .h2 {
+    @apply mt-3 text-3xl font-semibold leading-[1.1] tracking-[-0.025em] text-ink sm:text-5xl;
+  }
+
+  .lede {
+    @apply mt-5 max-w-2xl text-lg leading-relaxed text-slate sm:text-xl;
+  }
+
+  .card {
+    @apply rounded-card border border-sage-200/70 bg-white shadow-card;
+  }
+
+  .btn {
+    @apply inline-flex min-h-[52px] items-center justify-center gap-2.5 rounded-full px-7 py-3 text-base font-semibold transition-colors duration-150 disabled:cursor-not-allowed disabled:opacity-60 sm:text-lg;
+  }
+
+  .btn-primary {
+    @apply btn bg-coral-600 text-white shadow-lift hover:bg-coral-700;
+  }
+
+  .btn-secondary {
+    @apply btn border border-sage-200 bg-white text-ink shadow-sm hover:border-teal;
+  }
+
+  .btn-ghost {
+    @apply btn text-teal hover:bg-teal-50;
+  }
+
+  .field-label {
+    @apply mb-1.5 block text-sm font-medium text-ink;
+  }
+
+  .field-input {
+    @apply block min-h-[48px] w-full rounded-2xl border border-sage-200 bg-white px-4 py-3 text-base text-ink placeholder:text-slate/60 focus:border-teal focus:outline-none focus:ring-4 focus:ring-teal/15 aria-[invalid=true]:border-coral-600;
+  }
+
+  .field-error {
+    @apply mt-1.5 flex items-start gap-1.5 text-sm font-medium text-coral-700;
+  }
+}

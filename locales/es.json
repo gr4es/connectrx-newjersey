@@ -1,0 +1,284 @@
+{
+  "meta": {
+    "title": "ConnectRX: Etiquetas de medicinas en su idioma",
+    "description": "Apoye SafeRX. Las farmacias de NJ tendrían que dar etiquetas, advertencias y consejos en su idioma."
+  },
+  "nav": {
+    "skip": "Ir al contenido",
+    "brandTag": "Etiquetas de medicinas en su idioma",
+    "links": {
+      "pillars": "La ley",
+      "laws": "Otros estados",
+      "action": "Actúe",
+      "journey": "Campaña",
+      "preview": "Ver etiqueta",
+      "faq": "Preguntas"
+    },
+    "language": "Idioma",
+    "yourLanguage": "Su idioma",
+    "chooseLanguage": "Elija un idioma",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "cta": "Firme la petición"
+  },
+  "hero": {
+    "eyebrow": "Propuesta de ley en Nueva Jersey",
+    "titleLead": "Etiquetas de medicinas",
+    "titleHighlight": "que usted puede leer.",
+    "subtitle": "SafeRX obligaría a las farmacias de NJ a darle etiquetas, advertencias y consejos en su idioma. Menos errores. Atención más segura.",
+    "ctaPetition": "Firme la petición",
+    "ctaLegislator": "Escriba a sus legisladores",
+    "badges": [
+      {
+        "strong": "7",
+        "text": "idiomas desde el inicio"
+      },
+      {
+        "strong": "2 estados",
+        "text": "ya tienen leyes parecidas"
+      },
+      {
+        "strong": "1 minuto",
+        "text": "para escribir a sus legisladores"
+      }
+    ],
+    "cardTitle": "Su etiqueta, en su idioma",
+    "readIn": "Leer en español"
+  },
+  "action": {
+    "eyebrow": "Actúe",
+    "title": "Escriba a sus legisladores en un minuto",
+    "subtitle": "Firme la petición, encuentre su distrito y envíe una carta lista.",
+    "steps": [
+      "Sus datos",
+      "Su distrito",
+      "Su carta"
+    ],
+    "stepLabel": "Paso {current} de {total}",
+    "fields": {
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "zip": "Código postal de NJ",
+      "zipHint": "Empieza con 07 u 08",
+      "updates": "Quiero recibir novedades (opcional)"
+    },
+    "errors": {
+      "name": "Escriba su nombre completo.",
+      "email": "Escriba un correo válido.",
+      "zip": "Escriba un código postal de Nueva Jersey. Empieza con 07 u 08.",
+      "district": "Elija su distrito.",
+      "network": "Algo salió mal. Inténtelo de nuevo."
+    },
+    "findDistrict": "Firmar y buscar mi distrito",
+    "finding": "Buscando su distrito…",
+    "back": "Atrás",
+    "matched": "El código {zip} está en el Distrito {district}.",
+    "multiMatch": "El código {zip} abarca varios distritos. Elija el suyo.",
+    "noMatch": "¡Gracias por firmar! Elija su distrito para el código {zip}.",
+    "districtLabel": "Distrito legislativo",
+    "districtPlaceholder": "Elija su distrito",
+    "districtOption": "Distrito {district}",
+    "lookupLink": "¿No lo sabe? Búsquelo en el sitio de la Legislatura de NJ",
+    "recipientsTitle": "Su carta va para",
+    "senator": "Senador estatal, Distrito {district}",
+    "assembly": "2 asambleístas, Distrito {district}",
+    "continue": "Escribir mi carta",
+    "letterTitle": "Revise su carta",
+    "letterLanguage": "Idioma de la carta",
+    "letterInEnglish": "Inglés (mejor para legisladores)",
+    "letterInMine": "Mi idioma",
+    "subjectLabel": "Asunto",
+    "bodyLabel": "Mensaje (puede editarlo)",
+    "send": "Enviar carta",
+    "sending": "Abriendo correo…",
+    "copy": "Copiar carta",
+    "copied": "¡Copiada!",
+    "sendNote": "Se abrirá su correo con la carta lista. Solo usamos sus datos para esta campaña.",
+    "successTitle": "¡Gracias, {name}!",
+    "successBody": "Su carta está abierta en su correo. Presione enviar y comparta SafeRX con sus amigos.",
+    "startOver": "Escribir otra carta",
+    "letter": {
+      "subject": "Por favor apoye SafeRX",
+      "greeting": "Estimados Senador y asambleístas del Distrito {district}:",
+      "body": "Vivo en su distrito. Les pido que patrocinen y apoyen SafeRX.\n\nSafeRX obligaría a las farmacias de Nueva Jersey a dar etiquetas, advertencias y consejos del farmacéutico en el idioma de cada paciente.\n\nMuchas personas en Nueva Jersey hablan poco inglés. Si no pueden leer la etiqueta de su medicina, pueden tomar una dosis equivocada. Nueva York y California ya protegen a estos pacientes. Nueva Jersey también debe hacerlo.\n\nPor favor, díganme su postura sobre SafeRX.",
+      "closing": "Gracias,",
+      "signature": "{name}\n{zip}, Nueva Jersey\n{email}"
+    }
+  },
+  "pillars": {
+    "eyebrow": "La ley",
+    "title": "Qué hace SafeRX",
+    "subtitle": "Basada en leyes que ya funcionan en Nueva York y California.",
+    "items": [
+      {
+        "title": "Etiquetas traducidas",
+        "body": "Instrucciones y advertencias en su idioma, junto al inglés.",
+        "points": [
+          "Instrucciones traducidas",
+          "Advertencias traducidas",
+          "Inglés para los cuidadores"
+        ]
+      },
+      {
+        "title": "Traducciones confiables",
+        "body": "Un solo conjunto de traducciones aprobado por el estado, para todas las farmacias.",
+        "points": [
+          "Revisadas por traductores médicos",
+          "Gratis para las farmacias",
+          "Actualizadas con frecuencia"
+        ]
+      },
+      {
+        "title": "Control del estado",
+        "body": "La Junta de Farmacia de NJ hace cumplir las reglas.",
+        "points": [
+          "Normas claras",
+          "Una forma de reportar problemas",
+          "Informes públicos"
+        ]
+      },
+      {
+        "title": "Su idioma guardado",
+        "body": "La farmacia guarda su idioma una vez y lo usa siempre.",
+        "points": [
+          "Etiquetas, mensajes y consejos en el mismo idioma",
+          "Funciona con cualquier alfabeto",
+          "Intérpretes para las consultas"
+        ]
+      }
+    ]
+  },
+  "laws": {
+    "eyebrow": "Ya funciona en otros lugares",
+    "title": "Leyes que ya funcionan",
+    "subtitle": "Nueva York y California ya protegen a los pacientes. SafeRX se basa en ambas.",
+    "rows": {
+      "passed": "Aprobada",
+      "who": "A quién aplica",
+      "what": "Qué recibe el paciente",
+      "languages": "Idiomas"
+    },
+    "ny": {
+      "name": "Nueva York",
+      "law": "Ley SafeRx",
+      "passed": "2012 (vigente desde 2013)",
+      "who": "Cadenas con 8 o más farmacias en el estado",
+      "what": "Etiquetas, advertencias e información escrita traducidas gratis, más un intérprete para la consulta",
+      "languages": "Hasta 7 por región, cada uno hablado por al menos el 1% de la población",
+      "extra": "Las farmacias deben poner un aviso sobre este derecho."
+    },
+    "ca": {
+      "name": "California",
+      "law": "AB 1073",
+      "passed": "2015 (vigente desde 2016)",
+      "who": "Todas las farmacias",
+      "what": "Instrucciones de uso traducidas, si las pide, en la etiqueta o en una hoja aparte",
+      "languages": "Traducciones del estado en chino, coreano, español, farsi, ruso y vietnamita",
+      "extra": "El inglés se queda en la etiqueta. Las farmacias pueden agregar otros idiomas."
+    },
+    "source": "Leer la ley",
+    "takeaway": "SafeRX trae ambas ideas a Nueva Jersey: etiquetas y advertencias traducidas, y consejos en su idioma."
+  },
+  "journey": {
+    "eyebrow": "La campaña",
+    "title": "Cómo ganamos",
+    "subtitle": "Su voz va de esta página al Capitolio en Trenton.",
+    "steps": [
+      {
+        "title": "Comprometerse",
+        "body": "Firme la petición y díganos su distrito."
+      },
+      {
+        "title": "Movilizar",
+        "body": "Sume a amigos, compañeros y grupos de la comunidad."
+      },
+      {
+        "title": "Presionar",
+        "body": "Cartas, llamadas y visitas consiguen apoyo de ambos partidos."
+      },
+      {
+        "title": "Ganar",
+        "body": "Audiencias, votos y la firma del gobernador."
+      }
+    ],
+    "coalitionTitle": "Una coalición que crece"
+  },
+  "coalition": {
+    "label": "Tipos de aliados",
+    "pause": "Pausar",
+    "play": "Reanudar",
+    "items": [
+      "Grupos de salud pública",
+      "Grupos estudiantiles",
+      "Grupos de asistencia legal",
+      "Grupos de derechos de inmigrantes",
+      "Farmacéuticos",
+      "Comunidades de fe",
+      "Defensores de las personas mayores",
+      "Centros de salud comunitarios"
+    ]
+  },
+  "preview": {
+    "tablistLabel": "Idioma de la etiqueta",
+    "bilingual": "Mostrar también en inglés",
+    "stickersHeading": "Advertencias",
+    "disclaimer": "Solo un ejemplo. No es consejo médico. Las etiquetas reales necesitan traducción médica profesional."
+  },
+  "label": {
+    "patientLabel": "Paciente",
+    "rxLabel": "Receta",
+    "drug": "Amoxicilina 500 mg cápsulas",
+    "qtyLabel": "Cant.",
+    "refillsLabel": "Resurtidos",
+    "directionsLabel": "Instrucciones",
+    "directions": "Tome 1 cápsula por la boca 3 veces al día por 10 días.",
+    "warnings": [
+      "Termine toda la medicina, aunque se sienta mejor.",
+      "Tómela con comida o agua.",
+      "Llame a su médico de inmediato si tiene sarpullido o le cuesta respirar."
+    ],
+    "counseling": "Consejo gratis en su idioma. Pregunte a su farmacéutico."
+  },
+  "faq": {
+    "eyebrow": "Preguntas",
+    "title": "Preguntas comunes",
+    "items": [
+      {
+        "q": "¿Qué es SafeRX?",
+        "a": "Es una propuesta de ley en Nueva Jersey. Las farmacias tendrían que dar etiquetas, advertencias y consejos en su idioma. Todavía no es ley."
+      },
+      {
+        "q": "¿A quién ayuda?",
+        "a": "A quienes tienen dificultades con el inglés, y también a sus familias y cuidadores. Muchos son personas mayores e inmigrantes."
+      },
+      {
+        "q": "¿Qué hacen Nueva York y California?",
+        "a": "Nueva York exige que las grandes cadenas de farmacias den etiquetas traducidas e intérpretes gratis. California exige instrucciones traducidas si el paciente las pide, y el estado ofrece traducciones aprobadas. SafeRX se basa en ambas."
+      },
+      {
+        "q": "¿Por qué estos siete idiomas?",
+        "a": "Se hablan mucho en Nueva Jersey. La Junta de Farmacia puede agregar más después."
+      },
+      {
+        "q": "¿Cómo se garantiza que las traducciones sean correctas?",
+        "a": "Traductores médicos redactan y revisan un solo conjunto de traducciones. Las farmacias no tienen que traducir por su cuenta."
+      },
+      {
+        "q": "¿Cuánto les cuesta a las farmacias?",
+        "a": "Poco. Usan traducciones gratuitas del estado y el software que ya tienen. La ley fijaría los plazos."
+      },
+      {
+        "q": "¿De qué otra forma puedo ayudar?",
+        "a": "Firme la petición, envíe una carta, comparta esta página e invite a su grupo a unirse."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Una campaña comunitaria por etiquetas de medicinas en todos los idiomas.",
+    "contact": "Contáctenos",
+    "follow": "Síganos",
+    "translationNote": "Las traducciones deben ser revisadas por traductores calificados.",
+    "legal": "ConnectRX es una campaña comunitaria independiente. SafeRX es una propuesta de ley, no una ley. Este sitio no da consejo médico ni legal.",
+    "rights": "© {year} ConnectRX"
+  }
+}
