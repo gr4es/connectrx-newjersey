@@ -43,7 +43,7 @@ export default function Header() {
         <a href="#main" className="flex min-w-0 items-center gap-2.5 rounded-xl">
           <PillMark className="h-9 w-9 shrink-0" />
           <span className="flex min-w-0 flex-col leading-tight">
-            <span className="text-lg font-semibold tracking-tight text-teal">
+            <span className="whitespace-nowrap text-lg font-semibold tracking-tight text-teal">
               Connect<span className="text-coral-600">RX</span>
             </span>
             <span className="hidden truncate text-xs text-slate sm:block">{t("nav.brandTag")}</span>

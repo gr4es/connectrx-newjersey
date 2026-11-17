@@ -60,6 +60,10 @@
   [lang="zh-Hans"], [lang="ko"] {
     word-break: keep-all;
   }
+  /* In the big hero title Devanagari can be a little tighter, so it isn't much taller than the rest */
+  .h1 [lang="hi"] {
+    line-height: 1.25;
+  }
   /* And the reverse: Latin/Cyrillic titles keep their tight display spacing on a CJK/Hindi page */
   .h1 :is([lang="en"], [lang="es"], [lang="ru"], [lang="pt-BR"]) {
     line-height: 1.04;

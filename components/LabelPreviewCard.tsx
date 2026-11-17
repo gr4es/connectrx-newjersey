@@ -31,10 +31,64 @@ export default function LabelPreviewCard() {
   };
 
   return (
-    <div id="preview" className="card p-4 shadow-lift sm:p-6">
-      <div className="flex flex-wrap items-center justify-between gap-2 px-1">
-        <h2 id="preview-title" className="text-lg font-semibold text-ink">{t("hero.cardTitle")}</h2>
-        <label className="flex cursor-pointer items-center gap-2 text-sm font-medium text-slate">
+    <div id="preview" className="card overflow-hidden shadow-lift">
+      {/* Title, then the language tabs across the top */}
+      <div className="border-b border-sage-200/70 bg-gradient-to-b from-sage-50 to-white px-4 pb-5 pt-6 text-center sm:px-8">
+        <h2 id="preview-title" className="text-xl font-semibold tracking-tight text-ink sm:text-2xl">
+          {t("hero.cardTitle")}
+        </h2>
+
+        <div className="mt-4 flex justify-center">
+          <div
+            role="tablist"
+            aria-label={t("preview.tablistLabel")}
+            aria-orientation="horizontal"
+            className="flex max-w-full flex-wrap justify-center gap-1 rounded-3xl border border-sage-200 bg-white p-1 shadow-sm sm:flex-nowrap sm:rounded-full"
+          >
+            {LOCALES.map((code, i) => {
+              const meta = LOCALE_META[code];
+              const isSelected = code === selected;
+              return (
+                <button
+                  key={code}
+                  ref={(el) => {
+                    tabRefs.current[i] = el;
+                  }}
+                  role="tab"
+                  id={`preview-tab-${code}`}
+                  aria-selected={isSelected}
+                  aria-controls="preview-panel"
+                  tabIndex={isSelected ? 0 : -1}
+                  onClick={() => setSelected(code)}
+                  onKeyDown={(e) => onKeyDown(e, i)}
+                  lang={meta.htmlLang}
+                  title={meta.englishName}
+                  className={`min-h-[40px] shrink-0 whitespace-nowrap rounded-full px-4 text-sm font-semibold transition-colors ${
+                    isSelected ? "bg-teal text-white shadow-sm" : "text-slate hover:bg-sage-50 hover:text-ink"
+                  }`}
+                >
+                  {meta.nativeName}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="preview-panel"
+        role="tabpanel"
+        aria-labelledby={`preview-tab-${selected}`}
+        tabIndex={0}
+        className="bg-canvas p-4 sm:p-8"
+      >
+        <div key={selected} className="mx-auto max-w-xl animate-fade-up text-left">
+          <RxLabel locale={selected} bilingual={bilingual} />
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center justify-between gap-3 border-t border-sage-200/70 px-4 py-4 text-center sm:flex-row sm:px-8 sm:text-left">
+        <label className="flex cursor-pointer items-center gap-2 text-sm font-medium text-ink">
           <input
             type="checkbox"
             checked={bilingual}
@@ -43,59 +97,8 @@ export default function LabelPreviewCard() {
           />
           {t("preview.bilingual")}
         </label>
+        <p className="text-xs text-slate">{t("preview.disclaimer")}</p>
       </div>
-
-      {/* Languages on the side (a scrolling row on small screens), label beside them */}
-      <div className="mt-4 grid gap-4 sm:grid-cols-[8.5rem_1fr]">
-        <div
-          role="tablist"
-          aria-label={t("preview.tablistLabel")}
-          aria-orientation="vertical"
-          className="-mx-1 flex gap-1.5 overflow-x-auto px-1 pb-1 sm:mx-0 sm:flex-col sm:overflow-visible sm:px-0 sm:pb-0"
-        >
-          {LOCALES.map((code, i) => {
-            const meta = LOCALE_META[code];
-            const isSelected = code === selected;
-            return (
-              <button
-                key={code}
-                ref={(el) => {
-                  tabRefs.current[i] = el;
-                }}
-                role="tab"
-                id={`preview-tab-${code}`}
-                aria-selected={isSelected}
-                aria-controls="preview-panel"
-                tabIndex={isSelected ? 0 : -1}
-                onClick={() => setSelected(code)}
-                onKeyDown={(e) => onKeyDown(e, i)}
-                lang={meta.htmlLang}
-                title={meta.englishName}
-                className={`flex min-h-[38px] shrink-0 items-center whitespace-nowrap rounded-full border px-3.5 text-left text-sm font-semibold transition-colors sm:rounded-lg ${
-                  isSelected
-                    ? "border-teal bg-teal text-white"
-                    : "border-sage-200 bg-white text-ink hover:border-teal"
-                }`}
-              >
-                {meta.nativeName}
-              </button>
-            );
-          })}
-        </div>
-
-        <div
-          id="preview-panel"
-          role="tabpanel"
-          aria-labelledby={`preview-tab-${selected}`}
-          tabIndex={0}
-          className="min-w-0 rounded-2xl"
-        >
-          <div key={selected} className="animate-fade-up">
-            <RxLabel locale={selected} bilingual={bilingual} />
-          </div>
-        </div>
-      </div>
-      <p className="mt-4 px-1 text-xs text-slate">{t("preview.disclaimer")}</p>
     </div>
   );
 }

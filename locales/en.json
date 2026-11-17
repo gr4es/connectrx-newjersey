@@ -43,7 +43,8 @@
       }
     ],
     "cardTitle": "Your label, your language",
-    "readIn": "Read in English"
+    "readIn": "Read in English",
+    "chooseLanguage": "Choose your language"
   },
   "action": {
     "eyebrow": "Take action",

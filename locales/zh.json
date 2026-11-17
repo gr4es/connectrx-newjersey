@@ -43,7 +43,8 @@
       }
     ],
     "cardTitle": "您的标签，您的语言",
-    "readIn": "切换为中文"
+    "readIn": "切换为中文",
+    "chooseLanguage": "选择您的语言"
   },
   "action": {
     "eyebrow": "立即行动",

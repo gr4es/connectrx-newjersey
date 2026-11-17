@@ -43,7 +43,8 @@
       }
     ],
     "cardTitle": "Seu rótulo, no seu idioma",
-    "readIn": "Ler em português"
+    "readIn": "Ler em português",
+    "chooseLanguage": "Escolha seu idioma"
   },
   "action": {
     "eyebrow": "Participe",

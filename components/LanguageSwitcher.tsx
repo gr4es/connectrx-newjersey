@@ -6,6 +6,10 @@ import { DICTIONARIES, LOCALES, LOCALE_META, type Locale } from "@/lib/locales";
 import { useLanguageRotation } from "@/lib/rotation";
 import { CheckIcon, ChevronDownIcon, GlobeIcon } from "@/components/icons";
 
+/** Fire this to open the header language picker from anywhere on the page. */
+export const OPEN_LANGUAGE_EVENT = "connectrx:open-language";
+export const openLanguageSwitcher = () => window.dispatchEvent(new Event(OPEN_LANGUAGE_EVENT));
+
 /**
  * Accessible listbox-style language picker (WAI-ARIA "select-only combobox"
  * pattern): Enter/Space/↓ opens, ↑/↓/Home/End move, Enter selects, Esc closes.
@@ -33,6 +37,15 @@ export default function LanguageSwitcher({ className = "" }: { className?: strin
     document.addEventListener("pointerdown", onPointer);
     return () => document.removeEventListener("pointerdown", onPointer);
   }, [open, locale]);
+
+  useEffect(() => {
+    const onOpen = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      setOpen(true);
+    };
+    window.addEventListener(OPEN_LANGUAGE_EVENT, onOpen);
+    return () => window.removeEventListener(OPEN_LANGUAGE_EVENT, onOpen);
+  }, []);
 
   const choose = (code: Locale) => {
     setLocale(code);

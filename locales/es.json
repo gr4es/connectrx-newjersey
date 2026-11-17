@@ -43,7 +43,8 @@
       }
     ],
     "cardTitle": "Su etiqueta, en su idioma",
-    "readIn": "Leer en español"
+    "readIn": "Leer en español",
+    "chooseLanguage": "Elija su idioma"
   },
   "action": {
     "eyebrow": "Actúe",
