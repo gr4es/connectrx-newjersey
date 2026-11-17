@@ -13,100 +13,75 @@ const SAMPLE = {
   date: "11/16/2026",
 };
 
-const STICKER_STYLES = [
-  "bg-coral-50 border-coral/50",
-  "bg-sage-50 border-sage",
-  "bg-teal-50 border-teal/40",
-];
-
 interface RxLabelProps {
   locale: Locale;
   /** Show the English original under each translated line */
   bilingual?: boolean;
-  compact?: boolean;
-  /** Narrow container (hero card): tighter padding, stickers stacked in one column */
-  inCard?: boolean;
 }
 
-export default function RxLabel({ locale, bilingual = false, compact = false, inCard = false }: RxLabelProps) {
-  const tight = compact || inCard;
+/** A sample prescription label, compact enough for the hero card. */
+export default function RxLabel({ locale, bilingual = false }: RxLabelProps) {
   const L: Dictionary["label"] = DICTIONARIES[locale].label;
   const EN = DICTIONARIES.en.label;
-  const lang = LOCALE_META[locale].htmlLang;
   const showEnglish = bilingual && locale !== "en";
 
+  const meta = [
+    { label: L.patientLabel, value: SAMPLE.patient },
+    { label: L.rxLabel, value: `#${SAMPLE.rx}` },
+    { label: `${L.qtyLabel} · ${L.refillsLabel}`, value: `${SAMPLE.qty} · ${SAMPLE.refills}` },
+  ];
+
   return (
-    <figure
-      lang={lang}
-      className={`relative overflow-hidden rounded-card border-2 border-teal/15 bg-white ${tight ? "p-5" : "p-6 sm:p-8"}`}
-    >
+    <figure lang={LOCALE_META[locale].htmlLang} className="overflow-hidden rounded-2xl border border-sage-200 bg-white">
       {/* Pharmacy header strip */}
-      <div
-        className={`mb-5 flex items-center justify-between gap-3 bg-teal py-3 text-white ${
-          tight ? "-mx-5 -mt-5 px-5" : "-mx-6 -mt-6 px-6 sm:-mx-8 sm:-mt-8 sm:px-8"
-        }`}
-      >
+      <div className="flex items-center justify-between gap-3 bg-teal px-4 py-2.5 text-white sm:px-5">
         <div lang="en" className="min-w-0">
           <p className="truncate text-sm font-semibold">{SAMPLE.pharmacy}</p>
           <p className="truncate text-xs text-teal-100">{SAMPLE.address}</p>
         </div>
-        <span lang="en" className="shrink-0 rounded-full bg-white/15 px-2.5 py-1 text-xs font-semibold">
-          {SAMPLE.date}
-        </span>
+        <span lang="en" className="shrink-0 text-xs font-semibold text-teal-100">{SAMPLE.date}</span>
       </div>
 
-      <dl className={`grid grid-cols-2 gap-x-4 gap-y-2 text-sm ${inCard ? "" : "sm:grid-cols-4"}`}>
-        <div className="col-span-2">
-          <dt className="text-xs font-semibold text-slate">{L.patientLabel}</dt>
-          <dd lang="en" className="font-semibold text-ink">{SAMPLE.patient}</dd>
-        </div>
-        <div>
-          <dt className="text-xs font-semibold text-slate">{L.rxLabel}</dt>
-          <dd lang="en" className="font-semibold text-ink">#{SAMPLE.rx}</dd>
-        </div>
-        <div>
-          <dt className="text-xs font-semibold text-slate">
-            {L.qtyLabel} · {L.refillsLabel}
-          </dt>
-          <dd lang="en" className="font-semibold text-ink">{SAMPLE.qty} · {SAMPLE.refills}</dd>
-        </div>
-      </dl>
-
-      <p className="mt-4 text-base font-semibold text-ink">{L.drug}</p>
-      {showEnglish && <p lang="en" className="text-sm text-slate">{EN.drug}</p>}
-
-      <div className="mt-4 rounded-2xl bg-canvas p-4">
-        <p className="text-xs font-semibold text-teal">{L.directionsLabel}</p>
-        <p className={`mt-1 font-semibold text-ink ${tight ? "text-lg sm:text-xl" : "text-xl sm:text-2xl"}`}>{L.directions}</p>
-        {showEnglish && <p lang="en" className="mt-1 text-sm text-slate">{EN.directions}</p>}
-      </div>
-
-      {!compact && (
-        <>
-        <p className="mt-4 text-xs font-semibold text-teal">
-          {DICTIONARIES[locale].preview.stickersHeading}
-        </p>
-        <ul className={`mt-2 grid gap-2.5 ${inCard ? "" : "sm:grid-cols-3"}`}>
-          {L.warnings.map((warning, i) => (
-            <li
-              key={i}
-              className={`flex gap-2 rounded-2xl border-2 p-3 text-sm font-semibold text-ink ${STICKER_STYLES[i % STICKER_STYLES.length]}`}
-            >
-              <AlertIcon className="mt-0.5 h-4 w-4 shrink-0 text-coral-700" />
-              <span>
-                {warning}
-                {showEnglish && <span lang="en" className="mt-1 block text-xs font-normal text-slate">{EN.warnings[i]}</span>}
-              </span>
-            </li>
+      <div className="space-y-4 p-4 sm:p-5">
+        <dl className="grid grid-cols-3 gap-3">
+          {meta.map((m) => (
+            <div key={m.label} className="min-w-0">
+              <dt className="truncate text-xs text-slate">{m.label}</dt>
+              <dd lang="en" className="truncate text-sm font-semibold text-ink">{m.value}</dd>
+            </div>
           ))}
-        </ul>
-        </>
-      )}
+        </dl>
 
-      <figcaption className="mt-4 flex items-center gap-2 border-t border-dashed border-sage-200 pt-3 text-sm font-semibold text-teal">
-        <span className="inline-block h-2 w-2 shrink-0 rounded-full bg-coral" aria-hidden="true" />
-        {L.counseling}
-      </figcaption>
+        <div>
+          <p className="font-semibold text-ink">{L.drug}</p>
+          {showEnglish && <p lang="en" className="text-xs text-slate">{EN.drug}</p>}
+        </div>
+
+        <div className="border-l-4 border-teal pl-3">
+          <p className="text-xs font-semibold text-teal">{L.directionsLabel}</p>
+          <p className="mt-0.5 text-lg font-semibold leading-snug text-ink">{L.directions}</p>
+          {showEnglish && <p lang="en" className="mt-0.5 text-xs text-slate">{EN.directions}</p>}
+        </div>
+
+        <div>
+          <p className="text-xs font-semibold text-teal">{DICTIONARIES[locale].preview.stickersHeading}</p>
+          <ul className="mt-1.5 space-y-2">
+            {L.warnings.map((warning, i) => (
+              <li key={i} className="flex gap-2 text-sm leading-snug text-ink">
+                <AlertIcon className="mt-0.5 h-4 w-4 shrink-0 text-coral-700" />
+                <span>
+                  {warning}
+                  {showEnglish && <span lang="en" className="block text-xs text-slate">{EN.warnings[i]}</span>}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <figcaption className="border-t border-dashed border-sage-200 pt-3 text-sm font-semibold text-teal">
+          {L.counseling}
+        </figcaption>
+      </div>
     </figure>
   );
 }

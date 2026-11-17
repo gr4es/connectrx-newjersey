@@ -31,7 +31,7 @@ export default function LabelPreviewCard() {
   };
 
   return (
-    <div id="preview" className="card p-4 shadow-lift sm:p-5">
+    <div id="preview" className="card p-4 shadow-lift sm:p-6">
       <div className="flex flex-wrap items-center justify-between gap-2 px-1">
         <h2 id="preview-title" className="text-lg font-semibold text-ink">{t("hero.cardTitle")}</h2>
         <label className="flex cursor-pointer items-center gap-2 text-sm font-medium text-slate">
@@ -46,7 +46,7 @@ export default function LabelPreviewCard() {
       </div>
 
       {/* Languages on the side (a scrolling row on small screens), label beside them */}
-      <div className="mt-4 grid gap-3 sm:grid-cols-[auto_1fr]">
+      <div className="mt-4 grid gap-4 sm:grid-cols-[8.5rem_1fr]">
         <div
           role="tablist"
           aria-label={t("preview.tablistLabel")}
@@ -71,7 +71,7 @@ export default function LabelPreviewCard() {
                 onKeyDown={(e) => onKeyDown(e, i)}
                 lang={meta.htmlLang}
                 title={meta.englishName}
-                className={`flex min-h-[40px] shrink-0 items-center whitespace-nowrap rounded-full border px-3.5 text-left text-sm font-semibold transition-colors sm:rounded-xl ${
+                className={`flex min-h-[38px] shrink-0 items-center whitespace-nowrap rounded-full border px-3.5 text-left text-sm font-semibold transition-colors sm:rounded-lg ${
                   isSelected
                     ? "border-teal bg-teal text-white"
                     : "border-sage-200 bg-white text-ink hover:border-teal"
@@ -88,14 +88,14 @@ export default function LabelPreviewCard() {
           role="tabpanel"
           aria-labelledby={`preview-tab-${selected}`}
           tabIndex={0}
-          className="min-w-0 rounded-[24px] bg-sage-100 p-2"
+          className="min-w-0 rounded-2xl"
         >
           <div key={selected} className="animate-fade-up">
-            <RxLabel locale={selected} bilingual={bilingual} inCard />
+            <RxLabel locale={selected} bilingual={bilingual} />
           </div>
         </div>
       </div>
-      <p className="mt-3 px-1 text-xs text-slate">{t("preview.disclaimer")}</p>
+      <p className="mt-4 px-1 text-xs text-slate">{t("preview.disclaimer")}</p>
     </div>
   );
 }

@@ -1,0 +1,766 @@
+{
+  "source": "Open States (data.openstates.org/people/current/nj.csv)",
+  "generated": "2026-11-17",
+  "districts": {
+    "1": {
+      "senator": {
+        "name": "Mike Testa",
+        "email": "sentesta@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Antwan McClellan",
+          "email": "asmmcclellan@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Erik Simonsen",
+          "email": "asmsimonsen@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "2": {
+      "senator": {
+        "name": "Vince Polistina",
+        "email": "senpolistina@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Don Guardian",
+          "email": "asmguardian@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Maureen Rowan",
+          "email": "aswrowan@njleg.org",
+          "gender": "f"
+        }
+      ]
+    },
+    "3": {
+      "senator": {
+        "name": "John Burzichelli",
+        "email": "senburzichelli@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Dave Bailey",
+          "email": "asmbailey@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Heather Simmons",
+          "email": "aswsimmons@njleg.org",
+          "gender": "f"
+        }
+      ]
+    },
+    "4": {
+      "senator": {
+        "name": "Paul Moriarty",
+        "email": "senmoriarty@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Dan Hutchison",
+          "email": "asmhutchison@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Cody Miller",
+          "email": "asmmiller@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "5": {
+      "senator": {
+        "name": "Nilsa Cruz-Perez",
+        "email": "sencruzperez@njleg.org",
+        "gender": "f"
+      },
+      "assembly": [
+        {
+          "name": "Bill Moen",
+          "email": "asmmoen@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Bill Spearman",
+          "email": "asmspearman@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "6": {
+      "senator": {
+        "name": "Jim Beach",
+        "email": "senbeach@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Lou Greenwald",
+          "email": "asmgreenwald@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Melinda Kane",
+          "email": "aswkane@njleg.org",
+          "gender": "f"
+        }
+      ]
+    },
+    "7": {
+      "senator": {
+        "name": "Troy Singleton",
+        "email": "sensingleton@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Carol Murphy",
+          "email": "aswmurphy@njleg.org",
+          "gender": "f"
+        },
+        {
+          "name": "Balvir Singh",
+          "email": "asmsingh@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "8": {
+      "senator": {
+        "name": "Latham Tiver",
+        "email": "sentiver@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Anthony Angelozzi",
+          "email": "asmangelozzi@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Andrea Katz",
+          "email": "aswkatz@njleg.org",
+          "gender": "f"
+        }
+      ]
+    },
+    "9": {
+      "senator": {
+        "name": "Carmen Amato",
+        "email": "senamato@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Greg Myhre",
+          "email": "asmmyhre@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Brian Rumpf",
+          "email": "asmrumpf@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "10": {
+      "senator": {
+        "name": "Jim Holzapfel",
+        "email": "senholzapfel@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Paul Kanitra",
+          "email": "asmkanitra@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Greg McGuckin",
+          "email": "asmmcguckin@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "11": {
+      "senator": {
+        "name": "Vin Gopal",
+        "email": "sengopal@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Margie Donlon",
+          "email": "aswdonlon@njleg.org",
+          "gender": "f"
+        },
+        {
+          "name": "Luanne Peterpaul",
+          "email": "aswpeterpaul@njleg.org",
+          "gender": "f"
+        }
+      ]
+    },
+    "12": {
+      "senator": {
+        "name": "Owen Henry",
+        "email": "senhenry@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Rob Clifton",
+          "email": "asmclifton@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Alex Sauickie",
+          "email": "asmsauickie@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "13": {
+      "senator": {
+        "name": "Declan O'Scanlon",
+        "email": "senoscanlon@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Vicky Flynn",
+          "email": "aswflynn@njleg.org",
+          "gender": "f"
+        },
+        {
+          "name": "Gerry Scharfenberger",
+          "email": "asmscharfenberger@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "14": {
+      "senator": {
+        "name": "Linda Greenstein",
+        "email": "sengreenstein@njleg.org",
+        "gender": "f"
+      },
+      "assembly": [
+        {
+          "name": "Wayne DeAngelo",
+          "email": "asmdeangelo@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Tennille McCoy",
+          "email": "aswmccoy@njleg.org",
+          "gender": "f"
+        }
+      ]
+    },
+    "15": {
+      "senator": {
+        "name": "Shirley Turner",
+        "email": "senturner@njleg.org",
+        "gender": "f"
+      },
+      "assembly": [
+        {
+          "name": "Verlina Reynolds-Jackson",
+          "email": "aswreynoldsjackson@njleg.org",
+          "gender": "f"
+        },
+        {
+          "name": "Anthony Verrelli",
+          "email": "asmverrelli@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "16": {
+      "senator": {
+        "name": "Andrew Zwicker",
+        "email": "senzwicker@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Mitchelle Drulis",
+          "email": "aswdrulis@njleg.org",
+          "gender": "f"
+        },
+        {
+          "name": "Roy Freiman",
+          "email": "asmfreiman@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "17": {
+      "senator": {
+        "name": "Bob Smith",
+        "email": "senbsmith@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Joe Danielsen",
+          "email": "asmdanielsen@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Kevin Egan",
+          "email": "asmegan@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "18": {
+      "senator": {
+        "name": "Patrick Diegnan",
+        "email": "sendiegnan@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Robert Karabinchak",
+          "email": "asmkarabinchak@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Sterley Stanley",
+          "email": "asmstanley@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "19": {
+      "senator": {
+        "name": "Joe Vitale",
+        "email": "senvitale@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Craig Coughlin",
+          "email": "asmcoughlin@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Yvonne Lopez",
+          "email": "aswlopez@njleg.org",
+          "gender": "f"
+        }
+      ]
+    },
+    "20": {
+      "senator": {
+        "name": "Joe Cryan",
+        "email": "sencryan@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Annette Quijano",
+          "email": "aswquijano@njleg.org",
+          "gender": "f"
+        },
+        {
+          "name": "Ed Rodriguez",
+          "email": "asmrodriguez@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "21": {
+      "senator": {
+        "name": "Jon Bramnick",
+        "email": "senbramnick@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Vinnie Kearney",
+          "email": "asmkearney@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Andrew Macurdy",
+          "email": "asmmacurdy@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "22": {
+      "senator": {
+        "name": "Nick Scutari",
+        "email": "senscutari@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Linda Carter",
+          "email": "aswcarter@njleg.org",
+          "gender": "f"
+        },
+        {
+          "name": "Jim Kennedy",
+          "email": "asmkennedy@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "23": {
+      "senator": {
+        "name": "Doug Steinhardt",
+        "email": "sensteinhardt@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "John DiMaio",
+          "email": "asmdimaio@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Erik Peterson",
+          "email": "asmpeterson@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "24": {
+      "senator": {
+        "name": "Parker Space",
+        "email": "senspace@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Dawn Fantasia",
+          "email": "aswfantasia@njleg.org",
+          "gender": "f"
+        },
+        {
+          "name": "Mike Inganamort",
+          "email": "asminganamort@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "25": {
+      "senator": {
+        "name": "Tony Bucco",
+        "email": "senbucco@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Aura Dunn",
+          "email": "aswdunn@njleg.org",
+          "gender": "f"
+        },
+        {
+          "name": "Marisa Sweeney",
+          "email": "aswsweeney@njleg.org",
+          "gender": "f"
+        }
+      ]
+    },
+    "26": {
+      "senator": {
+        "name": "Joe Pennacchio",
+        "email": "senpennacchio@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Brian Bergen",
+          "email": "asmbergen@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Jay Webber",
+          "email": "asmwebber@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "27": {
+      "senator": {
+        "name": "John McKeon",
+        "email": "senmckeon@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Rosy Bagolie",
+          "email": "aswbagolie@njleg.org",
+          "gender": "f"
+        },
+        {
+          "name": "Alixon Collazos-Gill",
+          "email": "aswcollazosgill@njleg.org",
+          "gender": "f"
+        }
+      ]
+    },
+    "28": {
+      "senator": {
+        "name": "Renee Burgess",
+        "email": "senburgess@njleg.org",
+        "gender": "f"
+      },
+      "assembly": [
+        {
+          "name": "Chigozie Onyema",
+          "email": "asmonyema@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Cleopatra Tucker",
+          "email": "aswtucker@njleg.org",
+          "gender": "f"
+        }
+      ]
+    },
+    "29": {
+      "senator": {
+        "name": "Teresa Ruiz",
+        "email": "senruiz@njleg.org",
+        "gender": "f"
+      },
+      "assembly": [
+        {
+          "name": "Eliana Pintor Marin",
+          "email": "aswpintormarin@njleg.org",
+          "gender": "f"
+        },
+        {
+          "name": "Shanique Speight",
+          "email": "aswspeight@njleg.org",
+          "gender": "f"
+        }
+      ]
+    },
+    "30": {
+      "senator": {
+        "name": "Bob Singer",
+        "email": "sensinger@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Sean Kean",
+          "email": "asmskean@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Avi Schnall",
+          "email": "asmschnall@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "31": {
+      "senator": {
+        "name": "Angela McKnight",
+        "email": "senmcknight@njleg.org",
+        "gender": "f"
+      },
+      "assembly": [
+        {
+          "name": "Will Sampson",
+          "email": "asmsampson@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Jerry Walker",
+          "email": "asmwalker@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "32": {
+      "senator": {
+        "name": "Raj Mukherji",
+        "email": "senmukherji@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Ravi Bhalla",
+          "email": "asmbhalla@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Katie Brennan",
+          "email": "aswbrennan@njleg.org",
+          "gender": "f"
+        }
+      ]
+    },
+    "33": {
+      "senator": {
+        "name": "Brian Stack",
+        "email": "senstack@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Gabe Rodriguez",
+          "email": "asmrodriguez@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Larry Wainstein",
+          "email": "asmwainstein@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "34": {
+      "senator": {
+        "name": "Britnee Timberlake",
+        "email": "sentimberlake@njleg.org",
+        "gender": "f"
+      },
+      "assembly": [
+        {
+          "name": "Carmen Morales",
+          "email": "aswmorales@njleg.org",
+          "gender": "f"
+        },
+        {
+          "name": "Mike Venezia",
+          "email": "asmvenezia@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "35": {
+      "senator": {
+        "name": "Benjie Wimberly",
+        "email": "senwimberly@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Al Abdelaziz",
+          "email": "asmabdelaziz@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Kenyatta Stewart",
+          "email": "asmstewart@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "36": {
+      "senator": {
+        "name": "Paul Sarlo",
+        "email": "sensarlo@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Clinton Calabrese",
+          "email": "asmcalabrese@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Gary Schaer",
+          "email": "asmschaer@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "37": {
+      "senator": {
+        "name": "Gordon Johnson",
+        "email": "senjohnson@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Shama Haider",
+          "email": "aswhaider@njleg.org",
+          "gender": "f"
+        },
+        {
+          "name": "Ellen Park",
+          "email": "aswpark@njleg.org",
+          "gender": "f"
+        }
+      ]
+    },
+    "38": {
+      "senator": {
+        "name": "Joe Lagana",
+        "email": "senlagana@njleg.org",
+        "gender": "m"
+      },
+      "assembly": [
+        {
+          "name": "Lisa Swain",
+          "email": "aswswain@njleg.org",
+          "gender": "f"
+        },
+        {
+          "name": "Chris Tully",
+          "email": "asmtully@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "39": {
+      "senator": {
+        "name": "Holly Schepisi",
+        "email": "senschepisi@njleg.org",
+        "gender": "f"
+      },
+      "assembly": [
+        {
+          "name": "Bob Auth",
+          "email": "asmauth@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "John Azzariti",
+          "email": "asmazzariti@njleg.org",
+          "gender": "m"
+        }
+      ]
+    },
+    "40": {
+      "senator": {
+        "name": "Kristin Corrado",
+        "email": "sencorrado@njleg.org",
+        "gender": "f"
+      },
+      "assembly": [
+        {
+          "name": "Al Barlas",
+          "email": "asmbarlas@njleg.org",
+          "gender": "m"
+        },
+        {
+          "name": "Chris DePhillips",
+          "email": "asmdephillips@njleg.org",
+          "gender": "m"
+        }
+      ]
+    }
+  }
+}

@@ -51,7 +51,7 @@ export default function RotatingTitle() {
       <h1 id="hero-title" className="h1 mt-5">
         <span className="sr-only">{titleFor(locale)}</span>
         <span aria-hidden="true" className="grid">
-          {/* When still (reduced motion or a chosen language) only the site language renders */}
+          {/* With reduced motion only the site language renders */}
           {(still ? order.slice(0, 1) : order).map((code, i) => (
             <span
               key={code}

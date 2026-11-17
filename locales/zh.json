@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "ConnectRX：让药品标签说您的语言",
-    "description": "支持 SafeRX 法案。新泽西州的药房将用您的语言提供药品标签、警示信息和用药指导。"
+    "description": "支持 ConnectRX 法案。新泽西州的药房将用您的语言提供药品标签、警示信息和用药指导。"
   },
   "nav": {
     "skip": "跳到正文",
@@ -25,7 +25,7 @@
     "eyebrow": "新泽西州拟议法案",
     "titleLead": "看得懂的",
     "titleHighlight": "药品标签。",
-    "subtitle": "SafeRX 将要求新泽西州的药房用您的语言提供药品标签、警示信息和用药指导。减少用药差错，让看病更安全。",
+    "subtitle": "ConnectRX 将要求新泽西州的药房用您的语言提供药品标签、警示信息和用药指导。减少用药差错，让看病更安全。",
     "ctaPetition": "签署请愿书",
     "ctaLegislator": "给议员发邮件",
     "badges": [
@@ -73,15 +73,27 @@
     "finding": "正在查找您的选区…",
     "back": "返回",
     "matched": "邮政编码 {zip} 属于第 {district} 选区。",
-    "multiMatch": "邮政编码 {zip} 横跨多个选区，请选择您所在的选区。",
-    "noMatch": "感谢您的签名！请选择邮政编码 {zip} 所在的选区。",
+    "signed": "感谢您的签名！现在来查找您的选区。",
+    "pickTown": "邮政编码 {zip} 覆盖多个市镇。请问您住在哪个市镇？",
+    "noZip": "没有找到邮政编码 {zip}。请在下方搜索您所在的市镇。",
+    "townDistrict": "{town}属于第 {district} 选区。",
+    "splitTown": "{town}分属多个选区。请选择您所在的选区，或查看官方地图。",
+    "searchTown": "搜索您所在的市镇",
+    "searchTownPlaceholder": "请输入市镇的英文名称",
+    "noTownMatch": "没有找到该市镇，请检查拼写。",
+    "manualPick": "也可以自己选择选区",
+    "countyName": "{county}县",
     "districtLabel": "立法选区",
     "districtPlaceholder": "请选择选区",
     "districtOption": "第 {district} 选区",
     "lookupLink": "不确定？请到新泽西州议会官网查询",
-    "recipientsTitle": "收信人",
-    "senator": "第 {district} 选区州参议员",
-    "assembly": "第 {district} 选区的两位州众议员",
+    "recipientsTitle": "您的信将寄给第 {district} 选区的议员",
+    "titles": {
+      "senatorM": "{name}州参议员",
+      "senatorF": "{name}州参议员",
+      "assemblyM": "{name}州众议员",
+      "assemblyF": "{name}州众议员"
+    },
     "continue": "开始写信",
     "letterTitle": "检查您的信件",
     "letterLanguage": "信件语言",
@@ -95,19 +107,20 @@
     "copied": "已复制！",
     "sendNote": "点击后会打开您的邮箱应用，信件已经写好。您的信息只用于本次活动。",
     "successTitle": "谢谢您，{name}！",
-    "successBody": "信件已在您的邮箱中打开，点击发送即可。也请把 SafeRX 分享给亲友。",
+    "successBody": "信件已在您的邮箱中打开，点击发送即可。也请把 ConnectRX 分享给亲友。",
     "startOver": "再写一封",
     "letter": {
-      "subject": "恳请支持 SafeRX 法案",
-      "greeting": "尊敬的第 {district} 选区州参议员和州众议员：",
-      "body": "我是您选区的居民，恳请您提出并支持 SafeRX 法案。\n\nSafeRX 将要求新泽西州的药房用每位患者的语言提供药品标签、警示贴和药剂师用药指导。\n\n许多新泽西居民的英语能力有限。如果看不懂药品标签，他们就可能用错剂量。纽约州和加州已经在保护这些患者，新泽西州也应该这样做。\n\n恳请告知您对 SafeRX 的立场。",
+      "subject": "恳请支持 ConnectRX 法案",
+      "greeting": "尊敬的{senator}、{asm1}和{asm2}：",
+      "greetingDistrict": "尊敬的第 {district} 选区州参议员和州众议员：",
+      "body": "您好！我叫{name}，住在第 {district} 立法选区。感谢您一直以来为社区所做的努力。\n\n我写信是想恳请您支持 ConnectRX 法案。这项拟议法案将要求新泽西州的药房用每位患者首选的语言提供处方标签、警示贴和药剂师用药指导。\n\n我们的许多邻居英语能力有限。如果看不懂自己药品上的标签，他们就可能用错剂量。纽约州和加州已经在保护这些患者，我相信新泽西州也能做到。\n\n如您能考虑提出或支持这项法案，我将不胜感激，也很希望听到您对此的看法。\n\n衷心感谢您抽出宝贵时间阅读这封信。",
       "closing": "此致\n敬礼！",
       "signature": "{name}\n新泽西州 {zip}\n{email}"
     }
   },
   "pillars": {
     "eyebrow": "法案内容",
-    "title": "SafeRX 有哪些内容",
+    "title": "ConnectRX 有哪些内容",
     "subtitle": "借鉴纽约州和加州行之有效的法律。",
     "items": [
       {
@@ -151,7 +164,7 @@
   "laws": {
     "eyebrow": "已有先例",
     "title": "已经生效的法律",
-    "subtitle": "纽约州和加州已经在保护这些患者，SafeRX 借鉴了这两部法律。",
+    "subtitle": "纽约州和加州已经在保护这些患者，ConnectRX 借鉴了这两部法律。",
     "rows": {
       "passed": "通过时间",
       "who": "适用范围",
@@ -177,7 +190,7 @@
       "extra": "标签上保留英文。药房也可以提供其他语言。"
     },
     "source": "查看法律原文",
-    "takeaway": "SafeRX 将两者的优点带到新泽西州：翻译后的标签和警示，以及用您的语言提供的用药指导。"
+    "takeaway": "ConnectRX 将两者的优点带到新泽西州：翻译后的标签和警示，以及用您的语言提供的用药指导。"
   },
   "journey": {
     "eyebrow": "倡议活动",
@@ -200,22 +213,6 @@
         "title": "胜利",
         "body": "经过听证和投票，最终由州长签署成为法律。"
       }
-    ],
-    "coalitionTitle": "不断壮大的联盟"
-  },
-  "coalition": {
-    "label": "合作伙伴类型",
-    "pause": "暂停",
-    "play": "继续",
-    "items": [
-      "公共卫生团体",
-      "学生团体",
-      "法律援助机构",
-      "移民权益组织",
-      "药剂师",
-      "宗教团体",
-      "长者权益组织",
-      "社区卫生中心"
     ]
   },
   "preview": {
@@ -244,8 +241,8 @@
     "title": "常见问题",
     "items": [
       {
-        "q": "SafeRX 是什么？",
-        "a": "SafeRX 是新泽西州的一项拟议法案。根据该法案，药房将用您的语言提供药品标签、警示信息和用药指导。它目前还不是法律。"
+        "q": "ConnectRX 是什么？",
+        "a": "ConnectRX 是新泽西州的一项拟议法案。根据该法案，药房将用您的语言提供药品标签、警示信息和用药指导。它目前还不是法律。"
       },
       {
         "q": "这项法案能帮助哪些人？",
@@ -253,7 +250,7 @@
       },
       {
         "q": "纽约州和加州是怎么做的？",
-        "a": "纽约州要求大型连锁药房免费提供翻译后的标签和口译服务。加州要求药房在患者提出要求时提供翻译后的用法说明，并由州政府提供审定的译文。SafeRX 借鉴了这两部法律。"
+        "a": "纽约州要求大型连锁药房免费提供翻译后的标签和口译服务。加州要求药房在患者提出要求时提供翻译后的用法说明，并由州政府提供审定的译文。ConnectRX 借鉴了这两部法律。"
       },
       {
         "q": "为什么选择这七种语言？",
@@ -278,7 +275,6 @@
     "contact": "联系我们",
     "follow": "关注我们",
     "translationNote": "本站译文应由合格的翻译人员审核。",
-    "legal": "ConnectRX 是一个独立的基层倡议组织。SafeRX 是一项拟议法案，目前还不是法律。本网站不提供医疗或法律建议。",
-    "rights": "© {year} ConnectRX"
+    "legal": "ConnectRX 是一个独立的基层倡议活动，致力于推动一项尚未成为法律的新泽西州拟议法案。本网站不提供医疗或法律建议。"
   }
 }

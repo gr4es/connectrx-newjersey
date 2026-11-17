@@ -6,7 +6,6 @@ import { MailIcon, PillMark } from "@/components/icons";
 
 export default function Footer() {
   const { t } = useI18n();
-  const year = new Date().getFullYear();
 
   const links = [
     { href: "#preview", key: "preview" },
@@ -67,7 +66,6 @@ export default function Footer() {
         <div className="container-page space-y-2 py-6 text-sm text-sage-100/90">
           <p>{t("footer.legal")}</p>
           <p>{t("footer.translationNote")}</p>
-          <p suppressHydrationWarning>{t("footer.rights", { year })}</p>
         </div>
       </div>
     </footer>

@@ -16,8 +16,8 @@ export default function Hero() {
         <div className="absolute -bottom-48 right-0 h-[30rem] w-[30rem] rounded-full bg-[#EADFCF]/60 blur-3xl" />
       </div>
 
-      <div className="container-page grid items-center gap-12 py-16 sm:py-20 lg:grid-cols-[1fr_1.05fr] lg:gap-16 lg:py-28">
-        <div>
+      <div className="container-page py-16 sm:py-20 lg:py-24">
+        <div className="max-w-4xl">
           <p className="eyebrow">
             <span className="h-2 w-2 animate-pulse-dot rounded-full bg-coral" aria-hidden="true" />
             {t("hero.eyebrow")}
@@ -46,7 +46,8 @@ export default function Hero() {
           </ul>
         </div>
 
-        <div className="relative mx-auto w-full max-w-xl lg:max-w-none">
+        {/* "Your label, your language" sits at the bottom of the hero */}
+        <div className="mt-14 sm:mt-16">
           <LabelPreviewCard />
         </div>
       </div>

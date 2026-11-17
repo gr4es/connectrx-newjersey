@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "ConnectRX: Medicine labels in your language",
-    "description": "Support SafeRX. It would require NJ pharmacies to give labels, warnings, and advice in your language."
+    "description": "Support ConnectRX. It would require NJ pharmacies to give labels, warnings, and advice in your language."
   },
   "nav": {
     "skip": "Skip to content",
@@ -25,7 +25,7 @@
     "eyebrow": "Proposed New Jersey bill",
     "titleLead": "Medicine labels",
     "titleHighlight": "you can read.",
-    "subtitle": "SafeRX would require NJ pharmacies to give you labels, warnings, and advice in your language. Fewer mistakes. Safer care.",
+    "subtitle": "ConnectRX would require NJ pharmacies to give you labels, warnings, and advice in your language. Fewer mistakes. Safer care.",
     "ctaPetition": "Sign the petition",
     "ctaLegislator": "Email your legislators",
     "badges": [
@@ -73,15 +73,27 @@
     "finding": "Finding your district…",
     "back": "Back",
     "matched": "ZIP {zip} is in District {district}.",
-    "multiMatch": "ZIP {zip} covers more than one district. Pick yours.",
-    "noMatch": "Thanks for signing! Pick your district for ZIP {zip}.",
+    "signed": "Thanks for signing! Now let's find your district.",
+    "pickTown": "ZIP {zip} covers more than one town. Which town do you live in?",
+    "noZip": "We couldn't find ZIP {zip}. Search for your town below.",
+    "townDistrict": "{town} is in District {district}.",
+    "splitTown": "{town} is split between districts. Pick yours, or check the official map.",
+    "searchTown": "Search for your town",
+    "searchTownPlaceholder": "Start typing your town",
+    "noTownMatch": "No town found. Check the spelling.",
+    "manualPick": "Or choose your district yourself",
+    "countyName": "{county} County",
     "districtLabel": "Legislative district",
     "districtPlaceholder": "Pick your district",
     "districtOption": "District {district}",
     "lookupLink": "Not sure? Look it up on the NJ Legislature site",
-    "recipientsTitle": "Your letter goes to",
-    "senator": "State Senator, District {district}",
-    "assembly": "2 Assembly members, District {district}",
+    "recipientsTitle": "Your letter goes to your District {district} legislators",
+    "titles": {
+      "senatorM": "Senator {name}",
+      "senatorF": "Senator {name}",
+      "assemblyM": "Assemblyman {name}",
+      "assemblyF": "Assemblywoman {name}"
+    },
     "continue": "Write my letter",
     "letterTitle": "Check your letter",
     "letterLanguage": "Letter language",
@@ -95,19 +107,20 @@
     "copied": "Copied!",
     "sendNote": "This opens your email app with the letter ready. We only use your info for this campaign.",
     "successTitle": "Thank you, {name}!",
-    "successBody": "Your letter is open in your email app. Press send, then share SafeRX with friends.",
+    "successBody": "Your letter is open in your email app. Press send, then share ConnectRX with friends.",
     "startOver": "Write another letter",
     "letter": {
-      "subject": "Please support SafeRX",
-      "greeting": "Dear Senator and Assembly members of District {district},",
-      "body": "I live in your district. Please sponsor and support SafeRX.\n\nSafeRX would require New Jersey pharmacies to give medicine labels, warning stickers, and pharmacist advice in each patient's language.\n\nMany New Jerseyans have limited English. If they can't read their medicine label, they can take the wrong dose. New York and California already protect these patients. New Jersey should too.\n\nPlease tell me where you stand on SafeRX.",
-      "closing": "Thank you,",
+      "subject": "A respectful request to support the ConnectRX bill",
+      "greeting": "Dear {senator}, {asm1}, and {asm2},",
+      "greetingDistrict": "Dear Senator and Assembly members of District {district},",
+      "body": "I hope this message finds you well. My name is {name}, and I live in Legislative District {district}. Thank you for all you do for our community.\n\nI am writing to respectfully ask for your support of ConnectRX, a proposed bill that would require New Jersey pharmacies to provide prescription labels, warning stickers, and pharmacist counseling in each patient's preferred language.\n\nMany of our neighbors have limited English. When someone cannot read the label on their own medicine, they risk taking the wrong dose. New York and California already protect these patients, and I believe New Jersey can do the same.\n\nI would be grateful if you would consider sponsoring or supporting this bill, and I would welcome hearing your thoughts on it.\n\nThank you very much for your time and consideration.",
+      "closing": "Respectfully,",
       "signature": "{name}\n{zip}, New Jersey\n{email}"
     }
   },
   "pillars": {
     "eyebrow": "The bill",
-    "title": "What SafeRX does",
+    "title": "What ConnectRX does",
     "subtitle": "Built on proven laws in New York and California.",
     "items": [
       {
@@ -151,7 +164,7 @@
   "laws": {
     "eyebrow": "Proven elsewhere",
     "title": "Laws that already work",
-    "subtitle": "New York and California already protect patients. SafeRX builds on both.",
+    "subtitle": "New York and California already protect patients. ConnectRX builds on both.",
     "rows": {
       "passed": "Passed",
       "who": "Who it covers",
@@ -177,7 +190,7 @@
       "extra": "English stays on the label. Pharmacies may add other languages."
     },
     "source": "Read the law",
-    "takeaway": "SafeRX brings both ideas to New Jersey: translated labels and warnings, plus counseling in your language."
+    "takeaway": "ConnectRX brings both ideas to New Jersey: translated labels and warnings, plus counseling in your language."
   },
   "journey": {
     "eyebrow": "The campaign",
@@ -200,22 +213,6 @@
         "title": "Win",
         "body": "Hearings, votes, and the governor's signature."
       }
-    ],
-    "coalitionTitle": "Our growing coalition"
-  },
-  "coalition": {
-    "label": "Partner types",
-    "pause": "Pause",
-    "play": "Play",
-    "items": [
-      "Public health groups",
-      "Student chapters",
-      "Legal aid groups",
-      "Immigrant rights groups",
-      "Pharmacists",
-      "Faith communities",
-      "Senior advocates",
-      "Community health centers"
     ]
   },
   "preview": {
@@ -244,7 +241,7 @@
     "title": "Common questions",
     "items": [
       {
-        "q": "What is SafeRX?",
+        "q": "What is ConnectRX?",
         "a": "A proposed New Jersey bill. Pharmacies would give labels, warnings, and advice in your language. It is not law yet."
       },
       {
@@ -253,7 +250,7 @@
       },
       {
         "q": "What do New York and California do?",
-        "a": "New York requires large chain pharmacies to offer free translated labels and interpreters. California requires translated directions on request, and the state provides approved translations. SafeRX builds on both."
+        "a": "New York requires large chain pharmacies to offer free translated labels and interpreters. California requires translated directions on request, and the state provides approved translations. ConnectRX builds on both."
       },
       {
         "q": "Why these seven languages?",
@@ -278,7 +275,6 @@
     "contact": "Contact us",
     "follow": "Follow",
     "translationNote": "Translations should be checked by qualified translators.",
-    "legal": "ConnectRX is an independent grassroots campaign. SafeRX is a proposed bill, not law. This site is not medical or legal advice.",
-    "rights": "© {year} ConnectRX"
+    "legal": "ConnectRX is an independent grassroots campaign for a proposed New Jersey bill that is not law yet. This site is not medical or legal advice."
   }
 }

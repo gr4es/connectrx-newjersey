@@ -3,17 +3,16 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { interpolate, useI18n } from "@/lib/i18n";
 import { DICTIONARIES, type Locale } from "@/lib/locales";
-import { CAMPAIGN, NJ_DISTRICTS } from "@/lib/campaign";
 import { isNjZip, isValidEmail, isValidName } from "@/lib/validation";
-import type { DistrictMatch } from "@/lib/districts";
+import { legislatorsFor, matchDistrict, type Legislator } from "@/lib/districts";
 import SectionHeading from "@/components/SectionHeading";
+import DistrictFinder from "@/components/DistrictFinder";
 import {
   AlertIcon,
   ArrowRightIcon,
   CapitolIcon,
   CheckIcon,
   CopyIcon,
-  ExternalIcon,
   MailIcon,
   UsersIcon,
 } from "@/components/icons";
@@ -28,12 +27,28 @@ interface Details {
   optIn: boolean;
 }
 
+/** Formal title + name in the given language, e.g. "Assemblywoman Verlina Reynolds-Jackson". */
+function titled(locale: Locale, role: "senator" | "assembly", person: Legislator): string {
+  const titles = DICTIONARIES[locale].action.titles;
+  const key = `${role}${person.gender === "f" ? "F" : "M"}` as keyof typeof titles;
+  return interpolate(titles[key], { name: person.name });
+}
+
 function buildLetter(locale: Locale, d: Details & { district: number }) {
   const L = DICTIONARIES[locale].action.letter;
   const vars = { name: d.name.trim(), email: d.email.trim(), zip: d.zip, district: d.district };
+  const legs = legislatorsFor(d.district);
+  // Address each legislator by name and title; fall back to the district if data is missing.
+  const greeting = legs
+    ? interpolate(L.greeting, {
+        senator: titled(locale, "senator", legs.senator),
+        asm1: titled(locale, "assembly", legs.assembly[0]),
+        asm2: titled(locale, "assembly", legs.assembly[1]),
+      })
+    : interpolate(L.greetingDistrict, vars);
   return {
     subject: L.subject,
-    body: [interpolate(L.greeting, vars), L.body, `${L.closing}\n${interpolate(L.signature, vars)}`].join("\n\n"),
+    body: [greeting, interpolate(L.body, vars), `${L.closing}\n${interpolate(L.signature, vars)}`].join("\n\n"),
   };
 }
 
@@ -46,7 +61,6 @@ export default function ActionCenter() {
   const [details, setDetails] = useState<Details>({ name: "", email: "", zip: "", optIn: false });
   const [errors, setErrors] = useState<FieldErrors>({});
   const [busy, setBusy] = useState(false);
-  const [match, setMatch] = useState<DistrictMatch | null>(null);
   const [district, setDistrict] = useState<number | "">("");
 
   const [letterLang, setLetterLang] = useState<"en" | "mine">("en");
@@ -104,9 +118,8 @@ export default function ActionCenter() {
         body: JSON.stringify(details),
       });
       if (!res.ok) throw new Error(String(res.status));
-      const data: { match: DistrictMatch } = await res.json();
-      setMatch(data.match);
-      setDistrict(data.match.status === "matched" ? data.match.districts[0] : "");
+      const m = matchDistrict(details.zip);
+      setDistrict(m.status === "matched" ? m.district : "");
       setStep(2);
     } catch {
       setErrors({ form: t("action.errors.network") });
@@ -162,7 +175,6 @@ export default function ActionCenter() {
 
   function reset() {
     setStep(1);
-    setMatch(null);
     setDistrict("");
     setEdited(false);
     setErrors({});
@@ -290,63 +302,48 @@ export default function ActionCenter() {
           )}
 
           {/* STEP 2: district confirmation */}
-          {step === 2 && match && (
+          {step === 2 && (
             <form noValidate onSubmit={confirmDistrict} className="animate-fade-up">
               <h3 ref={headingRef} tabIndex={-1} className="mt-1 text-2xl font-semibold focus:outline-none">
                 {stepTitles[1]}
               </h3>
-              <p role="status" className="mt-4 rounded-2xl bg-sage-50 p-4 font-semibold text-teal-800">
-                {match.status === "matched"
-                  ? t("action.matched", { zip: details.zip, district: match.districts[0] })
-                  : match.status === "multiple"
-                    ? t("action.multiMatch", { zip: details.zip })
-                    : t("action.noMatch", { zip: details.zip })}
-              </p>
-
-              <Field id={fieldId("district")} label={t("action.districtLabel")} error={errors.district} errorId={errId("district")} className="mt-5">
-                <select
-                  id={fieldId("district")}
-                  value={district}
-                  onChange={(e) => {
-                    setDistrict(e.target.value === "" ? "" : Number(e.target.value));
-                    setErrors({});
-                  }}
-                  aria-invalid={!!errors.district}
-                  aria-describedby={errors.district ? errId("district") : undefined}
-                  className="field-input"
-                >
-                  <option value="">{t("action.districtPlaceholder")}</option>
-                  {(match.status === "multiple" ? match.districts : NJ_DISTRICTS).map((n) => (
-                    <option key={n} value={n}>
-                      {t("action.districtOption", { district: n })}
-                    </option>
-                  ))}
-                </select>
-              </Field>
-
-              <a
-                href={CAMPAIGN.officialDistrictLookupUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-teal underline underline-offset-4 hover:text-teal-800"
-              >
-                {t("action.lookupLink")}
-                <ExternalIcon className="h-4 w-4" />
-              </a>
+              <DistrictFinder
+                key={details.zip}
+                zip={details.zip}
+                district={district}
+                onDistrict={(d) => {
+                  setDistrict(d);
+                  setErrors({});
+                }}
+                error={errors.district}
+                selectId={fieldId("district")}
+                errorId={errId("district")}
+              />
 
               {district !== "" && (
                 <div className="mt-6 rounded-2xl border-2 border-sage-200 p-4">
-                  <p className="text-sm font-semibold text-slate">{t("action.recipientsTitle")}</p>
-                  <ul className="mt-3 space-y-2">
-                    <li className="flex items-center gap-3 font-semibold">
-                      <CapitolIcon className="h-5 w-5 shrink-0 text-teal" />
-                      {t("action.senator", { district })}
-                    </li>
-                    <li className="flex items-center gap-3 font-semibold">
-                      <UsersIcon className="h-5 w-5 shrink-0 text-teal" />
-                      {t("action.assembly", { district })}
-                    </li>
-                  </ul>
+                  <p className="text-sm font-semibold text-slate">{t("action.recipientsTitle", { district })}</p>
+                  {(() => {
+                    const legs = legislatorsFor(district);
+                    if (!legs) return null;
+                    const people = [
+                      { icon: CapitolIcon, label: titled(locale, "senator", legs.senator), email: legs.senator.email },
+                      ...legs.assembly.map((a) => ({ icon: UsersIcon, label: titled(locale, "assembly", a), email: a.email })),
+                    ];
+                    return (
+                      <ul className="mt-3 space-y-3">
+                        {people.map(({ icon: Icon, label, email }) => (
+                          <li key={email} className="flex items-start gap-3">
+                            <Icon className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
+                            <span className="min-w-0">
+                              <span className="block font-semibold text-ink">{label}</span>
+                              <span lang="en" className="block truncate text-xs text-slate">{email}</span>
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    );
+                  })()}
                 </div>
               )}
 

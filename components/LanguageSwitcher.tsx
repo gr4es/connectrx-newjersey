@@ -78,7 +78,7 @@ export default function LanguageSwitcher({ className = "" }: { className?: strin
 
   // Button text cycles "Your language" through every language, in step with the
   // hero headline (shared clock), so visitors spot the switcher in their language.
-  const { order, index: phraseIndex, hold, chosen } = useLanguageRotation();
+  const { order, index: phraseIndex, hold } = useLanguageRotation();
   useEffect(() => {
     hold("menu", open);
   }, [open, hold]);
@@ -103,12 +103,6 @@ export default function LanguageSwitcher({ className = "" }: { className?: strin
       >
         <GlobeIcon className="h-5 w-5 shrink-0" />
         {/* All phrases share one grid cell: the button is as wide as the longest and never resizes */}
-        {chosen ? (
-          // After a choice the button simply names the chosen language, in that language.
-          <span aria-hidden="true" lang={current.htmlLang} className="whitespace-nowrap">
-            {current.nativeName}
-          </span>
-        ) : (
         <span aria-hidden="true" className="grid">
           {order.map((code, i) => (
             <span
@@ -122,7 +116,6 @@ export default function LanguageSwitcher({ className = "" }: { className?: strin
             </span>
           ))}
         </span>
-        )}
         <ChevronDownIcon className={`h-4 w-4 shrink-0 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
 

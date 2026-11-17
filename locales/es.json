@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "ConnectRX: Etiquetas de medicinas en su idioma",
-    "description": "Apoye SafeRX. Las farmacias de NJ tendrían que dar etiquetas, advertencias y consejos en su idioma."
+    "description": "Apoye ConnectRX. Las farmacias de NJ tendrían que dar etiquetas, advertencias y consejos en su idioma."
   },
   "nav": {
     "skip": "Ir al contenido",
@@ -25,7 +25,7 @@
     "eyebrow": "Propuesta de ley en Nueva Jersey",
     "titleLead": "Etiquetas de medicinas",
     "titleHighlight": "que usted puede leer.",
-    "subtitle": "SafeRX obligaría a las farmacias de NJ a darle etiquetas, advertencias y consejos en su idioma. Menos errores. Atención más segura.",
+    "subtitle": "ConnectRX obligaría a las farmacias de NJ a darle etiquetas, advertencias y consejos en su idioma. Menos errores. Atención más segura.",
     "ctaPetition": "Firme la petición",
     "ctaLegislator": "Escriba a sus legisladores",
     "badges": [
@@ -73,15 +73,27 @@
     "finding": "Buscando su distrito…",
     "back": "Atrás",
     "matched": "El código {zip} está en el Distrito {district}.",
-    "multiMatch": "El código {zip} abarca varios distritos. Elija el suyo.",
-    "noMatch": "¡Gracias por firmar! Elija su distrito para el código {zip}.",
+    "signed": "¡Gracias por firmar! Ahora busquemos su distrito.",
+    "pickTown": "El código {zip} abarca más de una ciudad. ¿En cuál vive usted?",
+    "noZip": "No encontramos el código {zip}. Busque su ciudad abajo.",
+    "townDistrict": "{town} está en el Distrito {district}.",
+    "splitTown": "{town} está dividida entre varios distritos. Elija el suyo o consulte el mapa oficial.",
+    "searchTown": "Busque su ciudad",
+    "searchTownPlaceholder": "Empiece a escribir su ciudad",
+    "noTownMatch": "No encontramos esa ciudad. Revise cómo la escribió.",
+    "manualPick": "O elija su distrito usted mismo",
+    "countyName": "Condado de {county}",
     "districtLabel": "Distrito legislativo",
     "districtPlaceholder": "Elija su distrito",
     "districtOption": "Distrito {district}",
     "lookupLink": "¿No lo sabe? Búsquelo en el sitio de la Legislatura de NJ",
-    "recipientsTitle": "Su carta va para",
-    "senator": "Senador estatal, Distrito {district}",
-    "assembly": "2 asambleístas, Distrito {district}",
+    "recipientsTitle": "Su carta va dirigida a sus legisladores del Distrito {district}",
+    "titles": {
+      "senatorM": "Senador {name}",
+      "senatorF": "Senadora {name}",
+      "assemblyM": "Asambleísta {name}",
+      "assemblyF": "Asambleísta {name}"
+    },
     "continue": "Escribir mi carta",
     "letterTitle": "Revise su carta",
     "letterLanguage": "Idioma de la carta",
@@ -95,19 +107,20 @@
     "copied": "¡Copiada!",
     "sendNote": "Se abrirá su correo con la carta lista. Solo usamos sus datos para esta campaña.",
     "successTitle": "¡Gracias, {name}!",
-    "successBody": "Su carta está abierta en su correo. Presione enviar y comparta SafeRX con sus amigos.",
+    "successBody": "Su carta está abierta en su correo. Presione enviar y comparta ConnectRX con sus amigos.",
     "startOver": "Escribir otra carta",
     "letter": {
-      "subject": "Por favor apoye SafeRX",
-      "greeting": "Estimados Senador y asambleístas del Distrito {district}:",
-      "body": "Vivo en su distrito. Les pido que patrocinen y apoyen SafeRX.\n\nSafeRX obligaría a las farmacias de Nueva Jersey a dar etiquetas, advertencias y consejos del farmacéutico en el idioma de cada paciente.\n\nMuchas personas en Nueva Jersey hablan poco inglés. Si no pueden leer la etiqueta de su medicina, pueden tomar una dosis equivocada. Nueva York y California ya protegen a estos pacientes. Nueva Jersey también debe hacerlo.\n\nPor favor, díganme su postura sobre SafeRX.",
-      "closing": "Gracias,",
+      "subject": "Solicitud respetuosa de apoyo al proyecto de ley ConnectRX",
+      "greeting": "Estimados {senator}, {asm1} y {asm2}:",
+      "greetingDistrict": "Estimados Senador y asambleístas del Distrito {district}:",
+      "body": "Espero que se encuentren muy bien. Me llamo {name} y vivo en el Distrito Legislativo {district}. Les agradezco su trabajo por nuestra comunidad.\n\nLes escribo para pedirles respetuosamente su apoyo a ConnectRX, un proyecto de ley que exigiría a las farmacias de Nueva Jersey ofrecer etiquetas de recetas, advertencias y asesoría del farmacéutico en el idioma preferido de cada paciente.\n\nMuchos de nuestros vecinos hablan poco inglés. Cuando una persona no puede leer la etiqueta de su propio medicamento, corre el riesgo de tomar una dosis equivocada. Nueva York y California ya protegen a estos pacientes, y creo que Nueva Jersey puede hacer lo mismo.\n\nLes agradecería mucho que consideraran patrocinar o apoyar este proyecto de ley, y me encantaría conocer su opinión al respecto.\n\nMuchas gracias por su tiempo y consideración.",
+      "closing": "Atentamente,",
       "signature": "{name}\n{zip}, Nueva Jersey\n{email}"
     }
   },
   "pillars": {
     "eyebrow": "La ley",
-    "title": "Qué hace SafeRX",
+    "title": "Qué hace ConnectRX",
     "subtitle": "Basada en leyes que ya funcionan en Nueva York y California.",
     "items": [
       {
@@ -151,7 +164,7 @@
   "laws": {
     "eyebrow": "Ya funciona en otros lugares",
     "title": "Leyes que ya funcionan",
-    "subtitle": "Nueva York y California ya protegen a los pacientes. SafeRX se basa en ambas.",
+    "subtitle": "Nueva York y California ya protegen a los pacientes. ConnectRX se basa en ambas.",
     "rows": {
       "passed": "Aprobada",
       "who": "A quién aplica",
@@ -177,7 +190,7 @@
       "extra": "El inglés se queda en la etiqueta. Las farmacias pueden agregar otros idiomas."
     },
     "source": "Leer la ley",
-    "takeaway": "SafeRX trae ambas ideas a Nueva Jersey: etiquetas y advertencias traducidas, y consejos en su idioma."
+    "takeaway": "ConnectRX trae ambas ideas a Nueva Jersey: etiquetas y advertencias traducidas, y consejos en su idioma."
   },
   "journey": {
     "eyebrow": "La campaña",
@@ -200,22 +213,6 @@
         "title": "Ganar",
         "body": "Audiencias, votos y la firma del gobernador."
       }
-    ],
-    "coalitionTitle": "Una coalición que crece"
-  },
-  "coalition": {
-    "label": "Tipos de aliados",
-    "pause": "Pausar",
-    "play": "Reanudar",
-    "items": [
-      "Grupos de salud pública",
-      "Grupos estudiantiles",
-      "Grupos de asistencia legal",
-      "Grupos de derechos de inmigrantes",
-      "Farmacéuticos",
-      "Comunidades de fe",
-      "Defensores de las personas mayores",
-      "Centros de salud comunitarios"
     ]
   },
   "preview": {
@@ -244,7 +241,7 @@
     "title": "Preguntas comunes",
     "items": [
       {
-        "q": "¿Qué es SafeRX?",
+        "q": "¿Qué es ConnectRX?",
         "a": "Es una propuesta de ley en Nueva Jersey. Las farmacias tendrían que dar etiquetas, advertencias y consejos en su idioma. Todavía no es ley."
       },
       {
@@ -253,7 +250,7 @@
       },
       {
         "q": "¿Qué hacen Nueva York y California?",
-        "a": "Nueva York exige que las grandes cadenas de farmacias den etiquetas traducidas e intérpretes gratis. California exige instrucciones traducidas si el paciente las pide, y el estado ofrece traducciones aprobadas. SafeRX se basa en ambas."
+        "a": "Nueva York exige que las grandes cadenas de farmacias den etiquetas traducidas e intérpretes gratis. California exige instrucciones traducidas si el paciente las pide, y el estado ofrece traducciones aprobadas. ConnectRX se basa en ambas."
       },
       {
         "q": "¿Por qué estos siete idiomas?",
@@ -278,7 +275,6 @@
     "contact": "Contáctenos",
     "follow": "Síganos",
     "translationNote": "Las traducciones deben ser revisadas por traductores calificados.",
-    "legal": "ConnectRX es una campaña comunitaria independiente. SafeRX es una propuesta de ley, no una ley. Este sitio no da consejo médico ni legal.",
-    "rights": "© {year} ConnectRX"
+    "legal": "ConnectRX es una campaña comunitaria independiente a favor de una propuesta de ley de Nueva Jersey que todavía no es ley. Este sitio no da consejo médico ni legal."
   }
 }

@@ -14,10 +14,8 @@ interface LanguageRotation {
   /** The language currently on screen. */
   shown: Locale;
   reduced: boolean;
-  /** Animations are off: reduced motion, or the visitor picked a language. */
+  /** Animations are off (reduced motion). */
   still: boolean;
-  /** The visitor picked a language themselves. */
-  chosen: boolean;
   /** Pause (on = true) or release a pause for one source, e.g. "title" or "menu". */
   hold: (source: string, on: boolean) => void;
 }
@@ -30,12 +28,12 @@ const RotationContext = createContext<LanguageRotation | null>(null);
  * Any component can pause it; it runs again once every pause is released.
  */
 export function LanguageRotationProvider({ children }: { children: React.ReactNode }) {
-  const { locale, chosen } = useI18n();
+  const { locale } = useI18n();
   const [holds, setHolds] = useState<Record<string, boolean>>({});
 
   const order = useMemo<Locale[]>(() => [locale, ...LOCALES.filter((c) => c !== locale)], [locale]);
-  const paused = chosen || Object.values(holds).some(Boolean);
-  const { index: tick, reduced } = useRotation({
+  const paused = Object.values(holds).some(Boolean);
+  const { index, reduced } = useRotation({
     count: order.length,
     intervalMs: INTERVAL_MS,
     paused,
@@ -46,11 +44,10 @@ export function LanguageRotationProvider({ children }: { children: React.ReactNo
     setHolds((h) => (h[source] === on ? h : { ...h, [source]: on }));
   }, []);
 
-  // Once chosen, always show the chosen language (index 0 is the site language).
-  const index = chosen ? 0 : tick;
+  // Changing language never stops the rotation: it restarts from the new language.
   const value = useMemo(
-    () => ({ order, index, shown: order[index], reduced, still: reduced || chosen, chosen, hold }),
-    [order, index, reduced, chosen, hold],
+    () => ({ order, index, shown: order[index], reduced, still: reduced, hold }),
+    [order, index, reduced, hold],
   );
 
   return <RotationContext.Provider value={value}>{children}</RotationContext.Provider>;
